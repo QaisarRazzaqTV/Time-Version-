@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+import 'screens/time_screen.dart';
+import 'screens/profile_screen.dart';
+import 'screens/ai_screen.dart';
+final List<Widget> screens = const [
+  HomeScreen(),
+  TimeScreen(),
+  AiScreen(),
+  ProfileScreen(),
+];
+destinations: const [
+  NavigationDestination(
+    icon: Icon(Icons.home_outlined),
+    selectedIcon: Icon(Icons.home),
+    label: 'Home',
+  ),
+  NavigationDestination(
+    icon: Icon(Icons.access_time_outlined),
+    selectedIcon: Icon(Icons.access_time),
+    label: 'Time',
+  ),
+  NavigationDestination(
+    icon: Icon(Icons.smart_toy_outlined),
+    selectedIcon: Icon(Icons.smart_toy),
+    label: 'AI',
+  ),
+  NavigationDestination(
+    icon: Icon(Icons.person_outline),
+    selectedIcon: Icon(Icons.person),
+    label: 'Profile',
+  ),
+],
+  
