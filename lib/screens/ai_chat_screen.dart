@@ -47,13 +47,11 @@ class _AiChatScreenState extends State<AiChatScreen> {
 
         String answer;
 
-        if (data is Map && data['response'] != null) {
-          answer = data['response'].toString();
-        } else if (data is Map && data['message'] != null) {
-          answer = data['message'].toString();
-        } else {
-          answer = response.body;
-        }
+        if (data is Map && data['reply'] != null) {
+  answer = data['reply'].toString();
+} else {
+  answer = response.body;
+}
 
         setState(() {
           _messages.add({
